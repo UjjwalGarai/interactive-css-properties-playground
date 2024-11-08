@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>CSS Properties</h1>
+        <p id="description">Please interect with different properties dynamically</p>
+    </div>
+<div class="result-container">
+
+    <p id="result">A bad workman blame his tools</p>
+</div>
+
+    <div class="input-container">
+        <h4>Color Property</h4>
+        <div class="color">
+            <div class="text-color">
+                <label for="color">Text Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div class="background-color">
+                <label for="backgroundColor">Background Color</label>
+                <input type="color" name="backgroundColor" id="backgroundColor">
+            </div>
+        </div>
+        <h4>Font Property</h4>
+        <div class="font">
+            <div class="font-size">
+                <label for="fontSize">Font Size</label>
+                <select name="font-size-select" id="fontSize">
+                    <option value="none">None</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="20px">20px</option>
+                    <option value="1.5em">1.5em</option>
+                    <option value="1.5rem">1.5rem></option>
+                    <option value="80%">80%></option>
+                </select>
+            </div>
+            <div class="font-family">
+                <label for="fontFamily">Font Family</label>
+                <select name="font-family-select" id="fontFamily">
+                    <option value="none">None</option>
+                    <option value="Georgia, serif">Georgia, serif;</option>
+                    <option value=' "Gill Sans", sans-serif'> "Gill Sans", sans-serif;</option>
+                </select>
+            </div>
+            <div class="font-weight">
+                <label for="fontWeight">Font Weight</label>
+                <select name="font-weight-select" id="fontWeight">
+                    <option value="none">None</option>
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                </select>
+            </div>
+
+        </div>
+        <h4>Box Model Property</h4>
+        <div class="box-model">
+            <div class="margin">
+                <label for="margin">Margin</label>
+                <input type="range" name="margin" id="margin" min="0" max="100" value="50"
+                    oninput="document.getElementById('margin-output').innerText = this.value+ ' px'">
+                <output id="margin-output">50 <span>px</span></output>
+            </div>
+            <div class="padding">
+                <label for="padding">Padding</label>
+                <input type="range" name="padding" id="padding" min="0" max="100" value="50"
+                    oninput="document.getElementById('padding-output').innerText = this.value + ' px'">
+                <output id="padding-output"> 50 <span>px</span></output>
+            </div>
+            <div class="border">
+                <label for="border">Border</label>
+                <select name="border" id="border">
+                    <option value="none">None</option>
+                    <option value="solid">Solid</option>
+                    <option value="1px black">Solid black</option>
+                    <option value="dashed blue">Dashed blue</option>
+                    <option value="5px double red">5px double red</option>
+
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
